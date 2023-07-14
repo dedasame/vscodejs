@@ -236,14 +236,28 @@ for(var i=0; i<5; i++){
    console.log(i)
 }
 
-*/
-
 //*for of - iterable(üzerine döndürülebilir)
 //array - string 
 var text = "Hello World"
 for(var harf of text){
    console.log(harf)
 }
+
+*/
+
+
+//*While Döngüsü
+
+var i = 0
+while (i < 5){
+   console.log(i)
+   i++
+}
+
+
+
+
+
 
 
 
