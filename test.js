@@ -144,14 +144,46 @@ switch(input){
       break
 }
 
-*/
-
 
 //! Array (Dizi) Kavramı
 
-var list = []
-console.log(typeof list)
+var list = [3,"string",1]
+console.log(list)
 
+console.log(list[list.length-1])
+
+list.push("4")
+list.push(5)
+
+list.length = 8
+console.log(list)
+!listeye eşitlememize gerek kalmadan siliyor
+list.splice(4,3) //4. index ten başla 3 eleman sil
+console.log(list)
+
+list.slice(1,4) //değişkenin kendisini değiştirmez sadece aralığı alır
+list = list.slice(1,4) //değiştirmek için  bu şeklinde eşitlememiz gerekir.
+
+
+//! Objeleri birbirine eşitleyip değiştirdiğimizde ikiside değişiyor??
+var list1 = [1,4]
+var list2 = list1
+list2.push(5)
+console.log(list1)
+console.log(list2)
+
+//String ifadeyi diziye aktarma
+var test = "merhaba dünya nasılsın"
+var list3 = test.split(" ") // boşlukları referans alarak bölecek
+console.log(list3)
+
+list3[1] = "DÜNYA"
+
+console.log(list3.includes("dünya")) //liste bu ifadeyi içeriyor mu?
+console.log(list3.indexOf("dünya")) //girilen ifadenin indexi? yoksa -1
+console.log(list3.lastIndexOf("dünya")) //girilen ifadeden birden fazla varsa en sondaki elemanın indexi
+
+*/
 
 
 
