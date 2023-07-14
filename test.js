@@ -169,5 +169,6 @@ console.log(typeof list)
 
 
 
+
 // calistirmadan önce ctrl + s ile kayıt ediyoruz
 
