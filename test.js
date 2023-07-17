@@ -243,6 +243,37 @@ for(var harf of text){
    console.log(harf)
 }
 
+
+
+//* FOR EACH DONGUSU
+
+["Ali","Ahmet","Mehmet","Ece"].forEach((e,i,array)=> {
+   console.log(array)
+}) 
+
+//i : indexleriyle birlikte gezinir
+//array : arrayi bir degiskene atamadan da kullanabilmemize olanak sağlıyor
+
+var array = [1,2,3,4]
+array.forEach(e => {
+   console.log(e)
+   array[2]= 5
+})
+
+*/
+
+var array = [1,2,3,4]
+array.forEach((e,i) => {
+   console.log(e,i)
+   if(e==2) array.shift() //eleman 2 olduğunda baştaki elemani sildi ve 3'ün indexi 1 azaldı o yüzden yazmadı
+})
+
+//! foreach döngüsü durdurulamaz
+//* for of undefiend olarak yazar - for each direkt yazmadan geçer boş elemanları
+
+
+/*
+
 //*While Döngüsü
 
 var i = 0
