@@ -14,7 +14,6 @@ var user = {
 
 }
 
-/*
 
 //properties erişim yolları
 console.log(user.name)
@@ -33,9 +32,7 @@ console.log(user)
 console.log(Object.keys(user)) //key döndürür
 console.log(Object.values(user)[2]) //value dizisinin indexiyle döndürür
 
-*/
-
-
+console.log(Object.entries(user)) // key - value olarak veriyor
 
 
 
