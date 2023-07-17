@@ -1,4 +1,3 @@
-/*
 //* arguments
 
 function test(x){
@@ -33,8 +32,21 @@ function deneme(callback){
 
 deneme(square)
 
-*/
 
 //* Nested functions (İç İçe Fonksiyonlar)
 
+function pre(){
+    var a = 1
 
+    function nest_func(){
+        var b = 2
+        var a = 2
+        //console.log(b) 
+    }
+    //console.log(b) içerideki fonksiyonun içindekileri göremez
+
+    console.log(a)
+    nest_func()
+}
+
+pre()
