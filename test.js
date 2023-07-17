@@ -243,9 +243,6 @@ for(var harf of text){
    console.log(harf)
 }
 
-*/
-
-
 //*While Döngüsü
 
 var i = 0
@@ -253,6 +250,59 @@ while (i < 5){
    console.log(i)
    i++
 }
+
+//*Do While Döngüsü
+var i = 0
+do{
+   console.log("Hello World")
+   i++
+}while(i < 5)
+
+
+var kazananlar = [1, 5] //0-9 arasından
+do {
+
+   var random = Math.floor(Math.random()*10)//0-1 arasında rastgele sayı üretiyor 1 dahil değil
+
+}while(kazananlar.includes(random)) // kazananların içinde var ise tekrar üretir
+
+kazananlar.push(random)
+
+console.log(kazananlar)
+
+
+// forEach döngüsünde break - label kullanılmıyor
+
+//* break - continue - label kavramları
+
+// break statement : döngüyü kırmak için
+// continue statement : döngüdeki özel durumlarda döngünün o değer için pas geçmesini sağlar
+// label statement : iç içe döngülerde break 
+
+//label
+ilk_dongu:  //for döngüsünü isim veriyoruz
+for (var i=0 ; i<10 ; i++){
+
+   for(var j=0 ; j<10 ; j++){
+      if(j==5) break ilk_dongu //ilk donguyu sonlandırıyor (continue için de geçerli) 
+      console.log(j)
+   }
+   console.log(`i değeri : ${i}`) 
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
