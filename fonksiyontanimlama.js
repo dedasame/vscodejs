@@ -23,3 +23,6 @@ var karesinial = (n) => {
 
 console.log(karesinial(5))
 
+
+
+//!fonksiyon içerisinde tanımlı olan var'lar fonksiyon dışında görülmez
