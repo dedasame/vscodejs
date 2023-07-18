@@ -1,6 +1,4 @@
-
 //object ->  key:value
-
 
 var user = {
     name: "Eren",
@@ -14,7 +12,6 @@ var user = {
     }
 
 }
-
 
 //properties erişim yolları
 console.log(user.address.street)
@@ -50,7 +47,6 @@ var users = {
 
 console.log(users)
 
-
 var user = {
     name: "Eren",
     age: 20
@@ -61,10 +57,8 @@ var user = {
 var street = (user.address?.street) ? user.address.street : "Adres Bulunamadı" //undefined olabileceklerden sonra ? konulur
 console.log(street)
 
-
 var street = (user?.["address"]?.["street"]) ? user["address"]["street"] : "Adres Bulunamadı"
 console.log(street)
-
 
 //2 nesneyi tek bir nesne şeklinde birleştirmek
 
@@ -75,12 +69,10 @@ var result = {...data1,...data2}
 
 console.log(result)
 
-
 //*Diğer birleştirme yöntemi
 
 var result2 = Object.assign(data2,data1) //hangisinin üzerine tekrar yazılacağı ve ekleneceğine gösre sırası değişir
 console.log(result2)
-
 
 // mutable - immutable (değiştirilebilr - değiştirilemez) -  property'leri değiştirilemez
 //string-number -> immutable
@@ -109,7 +101,6 @@ Object.isSealed(data) // engellenmiş mi
 Object.freeze(data)
 Object.isFrozen(data) //dondurulmuş mu
 
-
-
 console.log(Object.isExtensible(data))
+
 
